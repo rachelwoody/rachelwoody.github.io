@@ -1,0 +1,573 @@
+/* html {
+
+  overflow: hidden;
+} */
+
+body {
+  background-color: #F7E5E5;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding:0;
+
+}
+
+.container {
+  width: inherit;
+  height: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  position: absolute;
+  width: 430px;
+  height: 250px;
+  left: 1028px;
+  top: 285px;
+  font-family: 'Abel', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 100px;
+  line-height: normal;
+  color: #E44A4A;
+}
+
+#navread {
+
+position: absolute;
+left: 380px;
+top: 80px;
+height: 100px;
+width: 100px;
+transition: ease 0.3s;
+
+}
+
+#navread:hover {
+
+top: 75px;
+
+}
+
+#navmeet{
+
+position: absolute;
+left: 695px;
+top: 110px;
+height: 100px;
+width: 100px;
+transition: ease 0.3s;
+
+}
+
+#navmeet:hover {
+
+top: 105px;
+
+}
+
+
+
+p {
+ font-family: 'Amethysta', serif;
+ position: absolute;
+  /* width: 593px;
+  height: 21px; */
+  left: 820px;
+  top: 450px;
+  justify-content: center;
+
+
+}
+#ellipse {
+  position: absolute;
+  left: 280px;
+  top: 505px;
+  z-index: -1;
+
+}
+#brain {
+  position: absolute;
+  width: 477px;
+  height: 390px;
+  left: 477px;
+  top: 515px;
+  /* background: url(brain.png); */
+  z-index: 1;
+}
+
+#circuit1 {
+  position: absolute;
+  width: 300px;
+  height: 287px;
+  left: 160px;
+  top: 350px;
+}
+
+#circuit2 {
+
+  position: absolute;
+  /* width: 365px;
+  height: 230px; */
+  left: 350px;
+  top: 160px;
+}
+
+#circuit3 {
+  position: absolute;
+  /* width: 80px;
+  height: 310px; */
+  left: 690px;
+  top: 200px;
+}
+
+
+.path {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 5s linear alternate infinite;
+}
+
+
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 1000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+
+
+/* read css */
+
+.navbar {
+width: 100%;
+display: block;
+height: 160px;
+position: fixed;
+background-color: white;
+z-index: 2;
+border-bottom: solid 3px #F5F2F2;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+
+#one.article-overlay {
+  border-bottom: solid 3px #E44A4A;
+  position: absolute;
+  width: 1440px;
+  height: 403px;
+  left: 0px;
+  top: 185px;
+
+background: rgba(255, 233, 115, 0.3);
+}
+#two.article-overlay {
+  position: absolute;
+  width: 1440px;
+  height: 403px;
+  left: 0px;
+  top: 589px;
+  background: rgba(196, 115, 34, 0.25);
+  border-bottom: solid 3px #E44A4A;
+
+
+}
+
+.left.image {
+
+    position: absolute;
+    width: 658px;
+    height: 338px;
+    left: 30px;
+    top: 35px;
+    background: url(image.png);
+    border: 3px solid #E44A4A;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+.right.image {
+  /* position: absolute;
+  display: inline-block;
+  width: 45%;
+  top: 0px;
+  float: right;
+  left: 600px;
+  margin: 5%;
+  border: 3px solid #E44A4A;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
+
+position: absolute;
+width: 714px;
+height: 357px;
+left: 693px;
+top: 20px;
+
+background: url(image.png);
+border: 3px solid #E44A4A;
+box-sizing: border-box;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+#rightdescription {
+  display: inline-block;
+  justify-content: left;
+  position: absolute;
+  float: left;
+  left: 50%;
+  margin: 5%;
+  top: 15%;
+  font-size: 20px;
+  line-height: 38px;
+
+}
+
+#leftdescription {
+  /* display: block;
+  justify-content: left;
+  position: absolute;
+  float: left;
+  margin: 5%;
+  top: 30%;
+  left: 5px;
+  font-size: 20px;
+  line-height: 38px; */
+  position: absolute;
+  width: 599px;
+  height: 344px;
+  left: 40px;
+  top: 75px;
+
+  font-family: Amethysta;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 38px;
+
+  color: #000000;
+
+}
+
+.readbutton.one{
+  position: absolute;
+  top: 75%;
+  left: 780px;
+  width: 200px;
+  height: 55px;
+  background: #E44A4A;
+  border-radius: 30px;
+  font-family: Amethysta;
+  font-size: 18px;
+  line-height: 20px;
+  color: white;
+  z-index: 3;
+}
+
+
+.readbutton.two{
+  position: absolute;
+  top: 68%;
+  left: 35px;
+  width: 200px;
+  height: 55px;
+  background: #E44A4A;
+  border-radius: 30px;
+  font-family: Amethysta;
+  font-size: 18px;
+  line-height: 20px;
+  color: white;
+  z-index: 3;
+}
+
+.readbutton.one:hover{
+
+  background:  #C63A25;
+
+}
+.readbutton.two:hover{
+
+    background:  #C63A25;
+
+}
+
+.search {
+
+  display: block;
+  position: absolute;
+  left: 60%;
+  top: 5%;
+  position: fixed;
+  z-index: 3;
+
+}
+
+#firstheading {
+  position: absolute;
+  display: inline-block;
+  height: 40px;
+  left: 770px;
+  top: 10%;
+  float: left;
+  margin-left: 1.5%;
+  font-family: Abel;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 38px;
+}
+
+#secondheading {
+  position: absolute;
+  display: inline-block;
+  height: 40px;
+  top:15px;
+  left: 20px;
+
+  float: left;
+  margin-left: 1.5%;
+  font-family: Abel;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 38px;
+}
+
+
+#navline1 {
+position: absolute;
+top: 0px;
+left: 70px;
+position: fixed;
+}
+
+#navline2 {
+position: absolute;
+top: 0px;
+left: 190px;
+position: fixed;
+}
+
+
+#readpg-homebutton {
+  position: absolute;
+  top: 15px;
+  width: 120px;
+  left: 20px;
+  position:fixed;
+ transition: 0.3s ease;
+
+}
+
+#readpg-homebutton:hover {
+  top: 25px;
+
+
+}
+
+#readpg-meetbutton {
+  position: absolute;
+  top: 35px;
+  width: 85px;
+  left: 160px;
+  position: fixed;
+  transition: 0.3s ease;
+}
+
+#readpg-meetbutton:hover {
+  top: 40px;
+
+}
+
+#meetpg-homebutton {
+  position: absolute;
+  top: 15px;
+  width: 120px;
+  left: 20px;
+  position:fixed;
+  transition: 0.3s ease;
+
+}
+
+#meetpg-homebutton:hover {
+  top: 25px;
+
+}
+
+#meetpg-readbutton {
+  position: absolute;
+  top: 35px;
+  width: 85px;
+  left: 160px;
+  position: fixed;
+  transition: 0.3s ease;
+
+}
+
+#meetpg-readbutton:hover {
+  top: 40px;
+
+}
+
+#meetcaption {
+
+  position: absolute;
+  width: 52px;
+  height: 31px;
+  left: 179px;
+  top: 105px;
+
+  font-family: Abel;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 31px;
+
+}
+
+#readcaption {
+
+  position: absolute;
+  width: 52px;
+  height: 31px;
+  left: 179px;
+  top: 105px;
+  font-family: Abel;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 31px;
+
+}
+
+
+#homecaption {
+
+
+  position: absolute;
+  width: 46px;
+  height: 31px;
+  left: 50px;
+  top: 105px;
+
+  font-family: Abel;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 31px;
+
+
+
+}
+
+#home-readcaption {
+  position: absolute;
+  font-family: Abel;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 31px;
+  left: 400px;
+  top: 10px;
+
+
+}
+
+#home-meetcaption {
+  position: absolute;
+  top: 40px;
+  left: 720px;
+  font-family: Abel;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 31px;
+
+
+}
+
+
+
+/* meet.html */
+
+h3 {
+  display: block;
+  position: absolute;
+  width: 212px;
+  height: 77px;
+  left: 612px;
+  top: 20px;
+  font-family: Abel;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 60px;
+  line-height: 76px;/* identical to box height */
+  color: #E44A4A;
+
+}
+
+  .teamdescription {
+
+    position: absolute;
+    top: -300px;
+    width: 100%;
+    right: 410px;
+    font-family: Amethysta;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 45px;
+    text-align: center;
+    color: #000000;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  }
+
+
+emphasis {
+  font-family: Amethysta;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  color: #E44A4A;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  /* position: absolute;
+  width: 1184px;
+  height: 139px;
+  left: 123px;
+  top: 271px; */
+}
+
+.info {
+  display: none;
+}
+
+.slider-area {
+  top: 410px;
+  margin: 80px;
+
+}
+
+.slick-prev:before {
+  content: "<";
+  color: red;
+  font-size: 40px;
+  z-index: 3;
+
+}
+
+.slick-next:before {
+  content: ">";
+  color: red;
+  font-size: 40px;
+  z-index: 3;
+
+}
